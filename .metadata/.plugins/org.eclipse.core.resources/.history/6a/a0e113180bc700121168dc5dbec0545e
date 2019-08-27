@@ -1,0 +1,19 @@
+package com.model.datatype;
+
+import com.model.util.Constants;
+
+public enum TerminalConfigType {
+
+	Cfg_Default(Constants.DAQmx_Val_Cfg_Default), RSE(Constants.DAQmx_Val_RSE), NRSE(
+			2), Diff(3), PseudoDiff(4);
+
+	private int code;
+
+	private TerminalConfigType(int code) {
+		this.code = code;
+	}
+
+	public int getCode() {
+		return code;
+	}
+}

@@ -1,0 +1,6 @@
+package com.model.util;
+
+public class Constants {
+
+	public static final int Cfg_Default = -1;
+}

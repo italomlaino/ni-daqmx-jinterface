@@ -1,0 +1,16 @@
+package com.model.datatype.unit;
+
+public enum VelocityUnitType {
+
+	MetersPerSecond(1), InchesPerSecond(2), FromCustomScale(0);
+
+	private int code;
+
+	private VelocityUnitType(int code) {
+		this.code = code;
+	}
+
+	public int getCode() {
+		return code;
+	}
+}

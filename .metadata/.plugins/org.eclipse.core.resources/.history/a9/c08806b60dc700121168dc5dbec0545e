@@ -1,0 +1,18 @@
+package com.model.datatype;
+
+import com.model.util.Constants;
+
+public enum FillModeType {
+
+	GroupByChannel(Constants.DAQmx_Val_GroupByChannel), GroupByScanNumber(1);
+
+	private int code;
+
+	private FillModeType(int code) {
+		this.code = code;
+	}
+
+	public int getCode() {
+		return code;
+	}
+}

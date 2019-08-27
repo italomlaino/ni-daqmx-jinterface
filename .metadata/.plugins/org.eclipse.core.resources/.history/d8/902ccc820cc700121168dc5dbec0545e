@@ -1,0 +1,19 @@
+package com.model.datatype;
+
+import com.model.util.Constants;
+
+public enum TaskActionType {
+
+	Start(Constants.DAQmx_Val_Task_Start), Stop(1), Verify(2), Commit(3), Reserve(
+			4), Unreserve(5), Abort(6);
+
+	private int code;
+
+	private TaskActionType(int code) {
+		this.code = code;
+	}
+
+	public int getCode() {
+		return code;
+	}
+}

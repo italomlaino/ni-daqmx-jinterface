@@ -1,0 +1,18 @@
+Requerimentos:
+	Java SE Runtime Environment 7u21
+		(http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html)
+	NIDAQmx 9.61f1
+		(http://joule.ni.com/nidu/cds/view/p/id/3622/lang/pt)
+	Microsoft Visual C++ 2010 SP1 Redistributable Package (x86)
+		(http://www.microsoft.com/en-us/download/details.aspx?id=8328)
+
+Instruções para rodar os exemplos:
+
+- Crie um emulador com o nome Dev1, ou renomeia um aparelho existencia
+para Dev1.
+
+- Antes de executar os exemplos coloque a interface
+(NIDAQmxJInterface.jar + NIDAQmxJWrapperNative.dll) na mesma pasta
+que o .jar do exemplo a ser executado.
+
+- O emulador não funciona para leitura de velocidade e torque.

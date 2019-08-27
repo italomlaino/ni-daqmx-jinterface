@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+environment/project/org.eclipse.cdt.msvc.dll.debug.181762003/INCLUDE/delimiter=;
+environment/project/org.eclipse.cdt.msvc.dll.debug.181762003/INCLUDE/operation=replace
+environment/project/org.eclipse.cdt.msvc.dll.debug.181762003/INCLUDE/value=C\:\\Program Files (x86)\\Windows Kits\\8.0\\Include\\um;C\:\\Program Files (x86)\\Windows Kits\\8.0\\Include\\um\\gl;C\:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\Include
+environment/project/org.eclipse.cdt.msvc.dll.debug.181762003/LIB/delimiter=;
+environment/project/org.eclipse.cdt.msvc.dll.debug.181762003/LIB/operation=replace
+environment/project/org.eclipse.cdt.msvc.dll.debug.181762003/LIB/value=C\:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\lib;C\:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v7.0A\\Lib
+environment/project/org.eclipse.cdt.msvc.dll.debug.181762003/append=true
+environment/project/org.eclipse.cdt.msvc.dll.debug.181762003/appendContributed=true
+environment/project/org.eclipse.cdt.msvc.dll.release.2138153719/INCLUDE/delimiter=;
+environment/project/org.eclipse.cdt.msvc.dll.release.2138153719/INCLUDE/operation=replace
+environment/project/org.eclipse.cdt.msvc.dll.release.2138153719/INCLUDE/value=C\:\\Program Files (x86)\\Windows Kits\\8.0\\Include\\um;C\:\\Program Files (x86)\\Windows Kits\\8.0\\Include\\um\\gl;C\:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\Include
+environment/project/org.eclipse.cdt.msvc.dll.release.2138153719/LIB/delimiter=;
+environment/project/org.eclipse.cdt.msvc.dll.release.2138153719/LIB/operation=replace
+environment/project/org.eclipse.cdt.msvc.dll.release.2138153719/LIB/value=C\:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\VC\\lib;C\:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v7.0A\\Lib
+environment/project/org.eclipse.cdt.msvc.dll.release.2138153719/append=true
+environment/project/org.eclipse.cdt.msvc.dll.release.2138153719/appendContributed=true

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.model.util.Constants"/>
+<fullyQualifiedTypeName name="com.model.channel.ai.AIChannelManager"/>
+<fullyQualifiedTypeName name="com.model.datatype.ActiveEdgeType"/>
+<fullyQualifiedTypeName name="com.model.datatype.SampleModeType"/>
+<fullyQualifiedTypeName name="com.model.datatype.TerminalConfigType"/>
+<fullyQualifiedTypeName name="com.model.datatype.unit.VoltageUnitType"/>
+<fullyQualifiedTypeName name="com.model.datatype.FillModeType"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="com.samples.ReadCurrentSample"/>
+<fullyQualifiedTypeName name="com.model.datatype.unit.CurrentUnitType"/>
+<fullyQualifiedTypeName name="com.model.datatype.ShuntResistorLocType"/>
+<fullyQualifiedTypeName name="com.model.datatype.unit.VelocityUnitType"/>
+<fullyQualifiedTypeName name="com.model.datatype.unit.VelocitySensivityUnitType"/>
+<fullyQualifiedTypeName name="com.model.datatype.unit.TorqueUnitType"/>
+<fullyQualifiedTypeName name="com.model.datatype.BridgeConfigType"/>
+<fullyQualifiedTypeName name="com.model.datatype.ExcitationSourceType"/>
+<fullyQualifiedTypeName name="com.model.datatype.unit.ElectricalUnitType"/>
+<fullyQualifiedTypeName name="com.model.datatype.unit.PhysicalUnitType"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+</qualifiedTypeNameHistroy>

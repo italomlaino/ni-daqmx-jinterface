@@ -1,0 +1,4 @@
+1369688186252	Rename type 'EletricalUnitType'
+1369702888703	Rename method 'createAITorqueBridgeTableChannel'
+1369702896015	Rename method 'createAITorqueBridgeTwoPointLinChan'
+1369702906393	Rename method 'createAIVelocityIEPEChan'

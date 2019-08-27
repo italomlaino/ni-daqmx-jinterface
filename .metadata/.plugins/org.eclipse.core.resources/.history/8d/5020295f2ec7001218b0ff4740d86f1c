@@ -1,0 +1,71 @@
+package com.samples;
+
+import com.exception.GenericException;
+import com.model.Task;
+import com.model.datatype.ActiveEdgeType;
+import com.model.datatype.FillModeType;
+import com.model.datatype.SampleModeType;
+import com.model.datatype.TerminalConfigType;
+import com.model.datatype.unit.VoltageUnitType;
+import com.model.reader.AnalogChannelReader;
+
+public class ReadVoltageSample {
+
+	public static void main(String[] args) {
+		readVoltageSample();
+	}
+
+	public static void readVoltageSample() {
+		// createAIVoltageChan
+		// Parâmetros para configuração do canal
+		String physicalChannel = "Dev1/ai0"; // Nome do canal físico
+		String nameToAssignToChannel = ""; // Nome a ser setado ao canal virtual
+		double minVal = -10.0; // Valor mínimo
+		double maxVal = 10.0; // Valor máximo
+		String customScaleName = null; // Nome da escala personalizada
+
+		// cfgSampClkTiming
+		// Parâmetros para configuração do relógio de amostras
+		String source = "";
+		double rate = 48000.0;
+		long sampsPerChan = 10000;
+		ActiveEdgeType activeEdge = ActiveEdgeType.Rising;
+
+		// readAnalogF64
+		// Parâmetros para configuração do leitor
+		double timeOut = 10.0; // Tempo minimo de espera
+
+		try {
+			// Cria a tarefa
+			Task task = new Task("readVoltageSample");
+
+			// Cria o canal de voltagem
+			task.getAIChannelManager().createVoltageChannel(physicalChannel,
+					nameToAssignToChannel, TerminalConfigType.Cfg_Default,
+					minVal, maxVal, VoltageUnitType.Volts, customScaleName);
+
+			// Configura o relogio de amostra
+			task.getTiming().configSampleClock(source, rate,
+					ActiveEdgeType.Rising, SampleModeType.Finite, sampsPerChan);
+
+			// Inicia a tarefa
+			task.start();
+
+			// Cria o leitor
+			AnalogChannelReader reader = new AnalogChannelReader(task, timeOut,
+					FillModeType.GroupByChannel);
+
+			// Lê
+			double data[] = reader.readF64((int) sampsPerChan);
+
+			// Imprime
+			for (int i = 0; i < data.length; i++) {
+				System.out.println("[" + i + "]: " + data[i]);
+			}
+
+		} catch (GenericException e) {
+			e.printStackTrace();
+		}
+
+	}
+}

@@ -1,0 +1,13 @@
+package com.model.util;
+
+public class Constants {
+
+	public static final int DAQmx_Val_Cfg_Default = -1;
+	public static final int DAQmx_Val_RSE = 10083;
+	public static final int DAQmx_Val_NRSE = 10078;
+	public static final int DAQmx_Val_Diff = 10106;
+	public static final int DAQmx_Val_PseudoDiff = 12529;
+
+	public static final int DAQmx_Val_Volts = 10348;
+
+}

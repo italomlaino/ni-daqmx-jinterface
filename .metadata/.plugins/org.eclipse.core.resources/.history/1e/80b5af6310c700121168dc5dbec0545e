@@ -1,0 +1,5 @@
+package com.model.datatype;
+
+public enum BridgeConfigType {
+
+}

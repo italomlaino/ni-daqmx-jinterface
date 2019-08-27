@@ -1,0 +1,19 @@
+package com.model.datatype;
+
+import com.model.util.Constants;
+
+public enum ExcitationSourceType {
+	DAQmx_Val_None(Constants.DAQmx_Val_None), DAQmx_Val_Internal(
+			Constants.DAQmx_Val_Internal), DAQmx_Val_External(
+			Constants.DAQmx_Val_External);
+
+	private int code;
+
+	private ExcitationSourceType(int code) {
+		this.code = code;
+	}
+
+	public int getCode() {
+		return code;
+	}
+}
